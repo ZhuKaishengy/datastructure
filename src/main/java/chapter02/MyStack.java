@@ -14,6 +14,10 @@ public class MyStack {
         return elementData.length == 0;
     }
 
+    /**
+     * 入栈
+     * @param ele
+     */
     public void push(int ele){
         int[] elememtsNew = new int[elementData.length + 1];
         if (isEmpty()) {
@@ -27,6 +31,10 @@ public class MyStack {
         this.elementData = elememtsNew;
     }
 
+    /**
+     * 出栈
+     * @return
+     */
     public int pop(){
         if (isEmpty()) {
           throw new RuntimeException("empty stack");
@@ -39,6 +47,10 @@ public class MyStack {
         return elementData[elementData.length -1];
     }
 
+    /**
+     * 查看栈顶元素
+     * @return
+     */
     public int peek(){
         if (isEmpty()) {
             throw new RuntimeException("empty stack");

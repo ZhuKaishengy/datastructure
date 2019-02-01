@@ -18,7 +18,7 @@ public class HuffManTree {
 
     public HuffManNode root;
 
-    public HuffManTree build(int[] arr){
+    public static HuffManTree build(int[] arr){
         // 创建哈夫曼数集合
         List<HuffManNode> list = new ArrayList<>();
         for (int i : arr) {
@@ -43,8 +43,7 @@ public class HuffManTree {
 
     public static void main(String[] args) {
         int[] arr = {3, 7, 8, 29, 5, 11, 23, 14};
-        HuffManTree huffManTree = new HuffManTree();
-        HuffManTree huffManTree2 = huffManTree.build(arr);
-        System.out.println(huffManTree2);
+        HuffManTree huffManTree = build(arr);
+        System.out.println(huffManTree);
     }
 }

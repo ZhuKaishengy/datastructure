@@ -39,12 +39,13 @@ public class MyStack {
         if (isEmpty()) {
           throw new RuntimeException("empty stack");
         }
+        int elementDatum = elementData[elementData.length - 1];
         int[] elementsNew = new int[elementData.length -1];
         // copy previous
         System.arraycopy(elementData, 0, elementsNew, 0, elementsNew.length);
         // remove last element
         this.elementData = elementsNew;
-        return elementData[elementData.length -1];
+        return elementDatum;
     }
 
     /**

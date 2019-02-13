@@ -2,6 +2,7 @@ package chapter04;
 
 /**
  * 顺序存储的二叉树，用于完全二叉树
+ * @author zhukaishengy
  */
 public class ArrayBinaryTree {
 
